@@ -14,37 +14,43 @@ export const ProductGrid: React.FC = () => {
       name: "Premium Rice",
       category: "Grains",
       desc: "High-quality Basmati and non-Basmati rice sourced from the best fields in India.",
-      img: "https://images.unsplash.com/photo-1536304929831-d1ac96884089?auto=format&fit=crop&q=80&w=600"
+      // White rice bowl/sack
+      img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=600"
     },
     {
       name: "Exotic Spices",
       category: "Spices",
       desc: "Cardamom, Pepper, Turmeric and other authentic Indian spices known for aroma.",
-      img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600"
+      // Variety of spices in bowls
+      img: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&q=80&w=600"
     },
     {
       name: "Millets & Grains",
       category: "Superfoods",
       desc: "Nutrient-rich Bajra, Ragi, and other millets promoting a healthy lifestyle.",
-      img: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=600"
+      // Close up of grains/textures
+      img: "https://images.unsplash.com/photo-1486328228599-85db4443971f?auto=format&fit=crop&q=80&w=600"
     },
     {
       name: "Engineering Goods",
       category: "Industrial",
       desc: "Precision engineering components and machinery parts for global industries.",
-      img: "https://images.unsplash.com/photo-1531297461136-82lw9z1p1j82?auto=format&fit=crop&q=80&w=600"
+      // Industrial gears/machinery
+      img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600"
     },
     {
         name: "Sugar",
         category: "Commodities",
         desc: "Premium grade sugar sourced directly from top manufacturers.",
-        img: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=600"
+        // Sugar cubes/spoon
+        img: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&q=80&w=600"
     },
     {
         name: "Pulse & Cereals",
         category: "Staples",
         desc: "A wide variety of essential pulses and cereals for international markets.",
-        img: "https://images.unsplash.com/photo-1596558237936-a36746849b28?auto=format&fit=crop&q=80&w=600"
+        // Lentils/Pulses in wooden spoons
+        img: "https://images.unsplash.com/photo-1515543904379-3d757afe726e?auto=format&fit=crop&q=80&w=600"
     }
   ];
 
@@ -59,10 +65,11 @@ export const ProductGrid: React.FC = () => {
             transition={{ delay: idx * 0.1 }}
             className="group bg-white rounded-xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
         >
-            <div className="h-48 overflow-hidden relative">
+            <div className="h-48 overflow-hidden relative bg-stone-100">
                 <img 
                     src={item.img} 
                     alt={item.name} 
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4 bg-vivarman-gold/90 text-vivarman-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
