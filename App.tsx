@@ -248,14 +248,14 @@ const App: React.FC = () => {
                     <p className="text-stone-500 max-w-xl mx-auto">Have questions or need a quote? We’d love to hear from you!</p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                     {/* Address Card */}
-                    <div className="bg-white p-8 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors">
-                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-6 text-vivarman-gold">
+                    <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors flex flex-col items-center">
+                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-vivarman-gold">
                             <MapPin size={24} />
                         </div>
                         <h3 className="font-serif text-xl mb-4 text-vivarman-green">Visit Us</h3>
-                        <p className="text-sm text-stone-600 leading-relaxed">
+                        <p className="text-xs text-stone-600 leading-relaxed">
                             NO 411, 1ST FLOOR 4TH CROSS,<br/>
                             7TH BLOCK WEST JAYANAGAR,<br/>
                             Thataguni, JAYANAGAR POLICE STATION,<br/>
@@ -264,27 +264,44 @@ const App: React.FC = () => {
                         </p>
                     </div>
 
+                    {/* UAE Liaison Card */}
+                    <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors flex flex-col items-center">
+                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-vivarman-gold">
+                            <MapPin size={24} />
+                        </div>
+                        <h3 className="font-serif text-xl mb-4 text-vivarman-green">UAE Liaison</h3>
+                        <p className="text-xs text-stone-600 leading-relaxed">
+                            <strong>LA Global Trading Agents FZ-LLC</strong><br/>
+                            FDRK5815, Compass Building,<br/>
+                            Al Shohada Road, Al Hamra Industrial Zone-FZ<br/>
+                            Ras Al Khaimah, United Arab Emirates<br/>
+                            <span className="block mt-2 font-semibold text-vivarman-green">
+                                Ph: Mr Roopesh - <a href="tel:+971509467406" className="hover:text-vivarman-gold">+97-150-946-7406</a>
+                            </span>
+                        </p>
+                    </div>
+
                     {/* Email Card */}
-                    <div className="bg-white p-8 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors">
-                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-6 text-vivarman-gold">
+                    <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors flex flex-col items-center">
+                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-vivarman-gold">
                             <Mail size={24} />
                         </div>
                         <h3 className="font-serif text-xl mb-4 text-vivarman-green">Email Us</h3>
-                        <p className="text-sm text-stone-600 mb-4">
+                        <p className="text-xs text-stone-600 mb-4">
                             For trade inquiries and quotes:
                         </p>
-                        <a href="mailto:trade@vivarman.com" className="text-vivarman-green font-bold text-lg hover:underline">
+                        <a href="mailto:trade@vivarman.com" className="text-vivarman-green font-bold text-base hover:underline">
                             trade@vivarman.com
                         </a>
                     </div>
 
                     {/* Phone Card */}
-                    <div className="bg-white p-8 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors">
-                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-6 text-vivarman-gold">
+                    <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:border-vivarman-gold transition-colors flex flex-col items-center">
+                        <div className="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-vivarman-gold">
                             <Phone size={24} />
                         </div>
                         <h3 className="font-serif text-xl mb-4 text-vivarman-green">Call Us</h3>
-                        <div className="flex flex-col gap-2 text-stone-600 font-medium">
+                        <div className="flex flex-col gap-2 text-stone-600 font-medium text-sm">
                             <a href="tel:+919845794569" className="hover:text-vivarman-gold transition-colors">+91-9845794569</a>
                             <a href="tel:+919663308569" className="hover:text-vivarman-gold transition-colors">+91-9663308569</a>
                             <a href="tel:+919980206008" className="hover:text-vivarman-gold transition-colors">+91-9980206008</a>
