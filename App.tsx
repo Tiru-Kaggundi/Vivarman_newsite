@@ -276,7 +276,8 @@ const App: React.FC = () => {
                             Al Shohada Road, Al Hamra Industrial Zone-FZ<br/>
                             Ras Al Khaimah, United Arab Emirates<br/>
                             <span className="block mt-2 font-semibold text-vivarman-green">
-                                Ph: Mr Roopesh - <a href="tel:+971509467406" className="hover:text-vivarman-gold">+97-150-946-7406</a>
+                                Ph: Mr Roopesh - <a href="tel:+971522430791" className="hover:text-vivarman-gold">+971 52 2430791</a><br/>
+                                Mr Balachandar - <a href="tel:+971552108056" className="hover:text-vivarman-gold">+971 55 210 8056</a>
                             </span>
                         </p>
                     </div>
