@@ -8,6 +8,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Scale, ShieldCheck, BadgeCheck } from 'lucide-react';
 
+import greenCoffeeImg from '../src/assets/images/green_coffee_beans_1783170408551.jpg';
+import pulsesCerealsImg from '../src/assets/images/pulses_and_cereals_1783170426479.jpg';
+
 export const ProductGrid: React.FC = () => {
   const products = [
     {
@@ -39,18 +42,18 @@ export const ProductGrid: React.FC = () => {
       img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600"
     },
     {
-        name: "Sugar",
-        category: "Commodities",
-        desc: "Premium grade sugar sourced directly from top manufacturers.",
-        // Sugar cubes/spoon
-        img: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&q=80&w=600"
+        name: "Green Coffee Beans",
+        category: "Beverages",
+        desc: "Premium unroasted green coffee beans sourced from the finest estates in South India, preserving their natural aroma and quality.",
+        // Green raw coffee beans in a jute sack
+        img: greenCoffeeImg
     },
     {
         name: "Pulse & Cereals",
         category: "Staples",
         desc: "A wide variety of essential pulses and cereals for international markets.",
-        // Lentils/Pulses in wooden spoons
-        img: "https://images.unsplash.com/photo-1515543904379-3d757afe726e?auto=format&fit=crop&q=80&w=600"
+        // Assorted pulses, lentils, and grains
+        img: pulsesCerealsImg
     }
   ];
 
@@ -70,6 +73,7 @@ export const ProductGrid: React.FC = () => {
                     src={item.img} 
                     alt={item.name} 
                     loading="lazy"
+                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4 bg-vivarman-gold/90 text-vivarman-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
